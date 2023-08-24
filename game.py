@@ -5,7 +5,6 @@ def display_game(game_list):
 
 def position_choice():
     choice = 'wrong'
-
     while choice not in ['0', '1', '2']:
         choice = input("Please pick a position (0,1,2):")
 
@@ -13,8 +12,7 @@ def position_choice():
             print("Wrong Input!")
 
     return int(choice)
-
-
+    
 def replacement_choice(game_list, position):
     user_placement = input("Type a string to replace in the position:")
 
